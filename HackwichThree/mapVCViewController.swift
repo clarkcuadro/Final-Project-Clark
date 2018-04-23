@@ -18,10 +18,14 @@ class mapVCViewController: UIViewController {
     let regionRadius: CLLocationDistance = 1000
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
         centerMapOnLocation(location: initialLocation)
-
+        
+        //create an Restaurant object and set all the arguments to each of the three parameters
+        let restaurantOne = Restaurant(title: "Kalapawai", type: "American", coordinate:
+            CLLocationCoordinate2D(latitude: 21.346470, longitude: -158.080098))
+        mapView.addAnnotation(restaurantOne)
+        super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     func centerMapOnLocation(location: CLLocation){
