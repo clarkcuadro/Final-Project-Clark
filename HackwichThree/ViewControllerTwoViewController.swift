@@ -12,7 +12,7 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
 
     @IBOutlet weak var tableView: UITableView!
     
-    var bucketListArray = ["finish class", "register cm400", "become programmer", "make an app", "teach beginners", ]
+    var bucketListArray = ["sushi bay", "el fuego", "agu ramen", "julie'z", "okome bento", ]
     
     
     override func viewDidLoad() {
