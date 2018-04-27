@@ -14,9 +14,18 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
     
     var bucketListArray = ["sushi bay", "el fuego", "agu ramen", "julie'z", "okome bento", ]
     
+    //Restaurant Image Data
+    var restaurantImageData = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        
+        restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
+        
 
         
         
@@ -43,6 +52,37 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
         cell?.textLabel?.text = text
         return cell!
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+    
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! detailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+            s1.imagePass = restaurantImageData[imageIndex!]
+            
+            
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     /*
     // MARK: - Navigation

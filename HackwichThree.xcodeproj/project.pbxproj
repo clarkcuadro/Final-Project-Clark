@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7F29CFA52028EB33005ACA60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CFA42028EB33005ACA60 /* AppDelegate.swift */; };
-		7F29CFA72028EB33005ACA60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CFA62028EB33005ACA60 /* ViewController.swift */; };
 		7F29CFAA2028EB33005ACA60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F29CFA82028EB33005ACA60 /* Main.storyboard */; };
 		7F29CFAC2028EB33005ACA60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F29CFAB2028EB33005ACA60 /* Assets.xcassets */; };
 		7F29CFAF2028EB33005ACA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F29CFAD2028EB33005ACA60 /* LaunchScreen.storyboard */; };
 		7F29CFBA2028EB33005ACA60 /* HackwichThreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CFB92028EB33005ACA60 /* HackwichThreeTests.swift */; };
 		7F29CFC52028EB33005ACA60 /* HackwichThreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CFC42028EB33005ACA60 /* HackwichThreeUITests.swift */; };
 		7F29CFD32028F258005ACA60 /* ViewControllerTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29CFD22028F258005ACA60 /* ViewControllerTwoViewController.swift */; };
+		7F6F254D2093C795005BACE3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F6F254C2093C795005BACE3 /* Property List.plist */; };
+		7F6F254F2093CD59005BACE3 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F254E2093CD59005BACE3 /* detailViewController.swift */; };
 		7FAC3605208E90EC003DC81F /* mapVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC3604208E90EC003DC81F /* mapVCViewController.swift */; };
 		7FAC3607208E960A003DC81F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC3606208E960A003DC81F /* Restaurant.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7F29CFA12028EB33005ACA60 /* HackwichThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackwichThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F29CFA42028EB33005ACA60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F29CFA62028EB33005ACA60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F29CFA92028EB33005ACA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F29CFAB2028EB33005ACA60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F29CFAE2028EB33005ACA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		7F29CFC42028EB33005ACA60 /* HackwichThreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichThreeUITests.swift; sourceTree = "<group>"; };
 		7F29CFC62028EB33005ACA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F29CFD22028F258005ACA60 /* ViewControllerTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwoViewController.swift; sourceTree = "<group>"; };
+		7F6F254C2093C795005BACE3 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		7F6F254E2093CD59005BACE3 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		7FAC3604208E90EC003DC81F /* mapVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVCViewController.swift; sourceTree = "<group>"; };
 		7FAC3606208E960A003DC81F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				7F29CFA42028EB33005ACA60 /* AppDelegate.swift */,
-				7F29CFA62028EB33005ACA60 /* ViewController.swift */,
 				7F29CFA82028EB33005ACA60 /* Main.storyboard */,
+				7F6F254E2093CD59005BACE3 /* detailViewController.swift */,
+				7F6F254C2093C795005BACE3 /* Property List.plist */,
 				7FAC3604208E90EC003DC81F /* mapVCViewController.swift */,
 				7FAC3606208E960A003DC81F /* Restaurant.swift */,
 				7F29CFD22028F258005ACA60 /* ViewControllerTwoViewController.swift */,
@@ -243,6 +246,7 @@
 			files = (
 				7F29CFAF2028EB33005ACA60 /* LaunchScreen.storyboard in Resources */,
 				7F29CFAC2028EB33005ACA60 /* Assets.xcassets in Resources */,
+				7F6F254D2093C795005BACE3 /* Property List.plist in Resources */,
 				7F29CFAA2028EB33005ACA60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +274,9 @@
 			files = (
 				7FAC3607208E960A003DC81F /* Restaurant.swift in Sources */,
 				7F29CFD32028F258005ACA60 /* ViewControllerTwoViewController.swift in Sources */,
-				7F29CFA72028EB33005ACA60 /* ViewController.swift in Sources */,
 				7FAC3605208E90EC003DC81F /* mapVCViewController.swift in Sources */,
 				7F29CFA52028EB33005ACA60 /* AppDelegate.swift in Sources */,
+				7F6F254F2093CD59005BACE3 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,6 +30,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7b7-15-s3q" kind="show" identifier="mySegue" id="re9-Q7-04D"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -129,7 +132,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egp-z1-KH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="150"/>
+            <point key="canvasLocation" x="2149" y="200"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1KU-67-4kf">
+            <objects>
+                <viewController id="7b7-15-s3q" customClass="detailViewController" customModule="HackwichThree" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fso-a5-iNv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBe-ah-ks4">
+                                <rect key="frame" x="16" y="64" width="304" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0ov-Wo-2gp"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="eBe-ah-ks4" id="gIq-PA-F50"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUe-Sw-ZN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="-1157"/>
         </scene>
     </scenes>
     <resources>
