@@ -12,7 +12,7 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
 
     @IBOutlet weak var tableView: UITableView!
     
-    var bucketListArray = ["sushi bay", "el fuego", "agu ramen", "julie'z", "okome bento", ]
+    var bucketListArray = ["kalapawai", "sushi bay", "el fuego", "agu ramen", "julie'z", "okome bento", ]
     
     //Restaurant Image Data
     var restaurantImageData = [String]()

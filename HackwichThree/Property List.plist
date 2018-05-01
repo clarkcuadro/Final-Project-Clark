@@ -2,14 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantdescriptions</key>
+	<array>
+		<string>American</string>
+		<string>Japanese fusion</string>
+		<string>Mexican </string>
+		<string>Japanese Udon</string>
+		<string>Filipino </string>
+		<string>Japanese Bento</string>
+	</array>
 	<key>restaurantImages</key>
 	<array>
 		<string>kapoleiKalapawai</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>sushiBay</string>
+		<string>elFuego</string>
+		<string>aguRamen</string>
+		<string>julie&apos;zRestaurant</string>
+		<string>okomeBento</string>
 	</array>
 </dict>
 </plist>
