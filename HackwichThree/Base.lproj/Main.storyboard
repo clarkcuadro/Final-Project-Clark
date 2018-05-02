@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="7b7-15-s3q" kind="show" id="0Ef-f3-2CU"/>
+                                            <segue destination="7b7-15-s3q" kind="show" identifier="mySegue" id="1oq-Zl-mzj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -47,7 +47,6 @@
                     <navigationItem key="navigationItem" id="nIM-kU-LRe"/>
                     <connections>
                         <outlet property="tableView" destination="e5d-H2-v7N" id="tJT-0L-Z1b"/>
-                        <segue destination="7b7-15-s3q" kind="show" id="Y7I-FO-J46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wd-a0-gJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,7 +170,4 @@
     <resources>
         <image name="about" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="0Ef-f3-2CU"/>
-    </inferredMetricsTieBreakers>
 </document>

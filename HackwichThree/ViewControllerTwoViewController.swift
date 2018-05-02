@@ -20,16 +20,15 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
         
-        restaurantImageData = dict!.object(forKey: "restaurantImages") as! [String]
-        
+        restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        tableView.dataSource = self
+        tableView.delegate = self
 
-        
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
