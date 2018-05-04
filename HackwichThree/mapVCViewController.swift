@@ -13,8 +13,8 @@ class mapVCViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     //set initial location to UHWO
-    let initialLocation = CLLocation(latitude: 21.361888 , longitude: -158.055725)
-    //set region around UHWO to 1000m
+    let initialLocation = CLLocation(latitude: 21.3380 , longitude: -158.0804)
+    //set region around UHWO to 10000m
     let regionRadius: CLLocationDistance = 10000
     
     
