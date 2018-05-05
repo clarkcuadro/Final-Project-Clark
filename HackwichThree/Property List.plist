@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantintro</key>
+	<array>
+		<string>kal</string>
+		<string>rest 2</string>
+		<string>rest 3</string>
+	</array>
 	<key>restaurantdescriptions</key>
 	<array>
 		<string>American</string>

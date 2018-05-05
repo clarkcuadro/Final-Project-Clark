@@ -16,6 +16,7 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
     
     //Restaurant Image Data
     var restaurantImageData = [String]()
+    var restaurantIntroData = [String]()
     
     
     override func viewDidLoad() {
@@ -28,7 +29,8 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
         restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
         tableView.dataSource = self
         tableView.delegate = self
-
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,8 +66,7 @@ class ViewControllerTwoViewController: UIViewController, UITableViewDataSource, 
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
             
-            
-            
+         
         }
     }
     

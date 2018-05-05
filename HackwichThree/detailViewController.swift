@@ -15,6 +15,14 @@ class detailViewController: UIViewController {
     
     var imagePass: String?
     
+    @IBOutlet weak var myTextView: UITextView!
+    
+    var textPass: UITextInputMode?
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +30,11 @@ class detailViewController: UIViewController {
         // Do any additional setup after loading the view.
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
+        
+        
+                
+                
+
             
         }
     }
