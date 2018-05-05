@@ -31,15 +31,10 @@ class detailViewController: UIViewController {
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
         
-        
-                
-                
-
-            
-        }
+          
     }
 
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -55,4 +50,5 @@ class detailViewController: UIViewController {
     }
     */
 
+}
 }
